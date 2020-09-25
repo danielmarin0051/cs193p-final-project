@@ -1,0 +1,107 @@
+[
+	{
+		"name": "Jiangnan Cuisine",
+		"menu": [
+			{
+				"name": "Chocolate Cake",
+				"price": 10.0,
+				"size": 1000,
+				"imageURL": "https://live.staticflickr.com/65535/49983403076_efbef3f54f_c.jpg"
+			},
+			{
+				"name": "Vanilla Ice Cream",
+				"price": 3.0,
+				"size": 200,
+				"imageURL": "https://live.staticflickr.com/65535/49983211706_5583877b0e_c.jpg"
+			},
+			{
+				"name": "Oreo Cookie",
+				"price": 2.0,
+				"size": 50,
+				"imageURL": "https://live.staticflickr.com/65535/49983471257_c6822c1721.jpg"
+			},
+			{
+				"name": "Strudel",
+				"price": 7.0,
+				"size": 300,
+				"imageURL": "https://live.staticflickr.com/65535/49983212016_490d49cacb_c.jpg"
+			}
+		]
+	},
+	{
+		"name": "Dragon Beaux",
+		"menu": [
+			{
+				"name": "Fish Sushi",
+				"price": 8.00,
+				"size": 200,
+				"imageURL": "https://live.staticflickr.com/65535/49983363691_53ca0eede5_c.jpg"
+			},
+			{
+				"name": "Sichuan Pork",
+				"price": 15.0,
+				"size": 220,
+				"imageURL": "https://images.chinahighlights.com/allpicture/2019/11/7b3afb974d7946bbbe397f7c_894x670.jpg"
+			},
+			{
+				"name": "Garlic Shrimp",
+				"price": 22.0,
+				"size": 300,
+				"imageURL": "https://live.staticflickr.com/65535/49983363696_61e4015500_c.jpg"
+			},
+			{
+				"name": "Dumplings",
+				"price": 5.0,
+				"size": 250,
+				"imageURL": "https://live.staticflickr.com/65535/49983624467_01ec455164_c.jpg"
+			},
+			{
+				"name": "Chow Mein",
+				"price": 12.0,
+				"size": 175,
+				"imageURL": "https://live.staticflickr.com/65535/49983363826_08d601d80b_c.jpg"
+			},
+			{
+				"name": "Pekin Roasted Duck",
+				"price": 16.0,
+				"size": 225,
+				"imageURL": "https://live.staticflickr.com/65535/49983364176_81c875bd92_c.jpg"
+			}
+		]
+	},
+	{
+		"name": "House of Prime Rib",
+		"menu": [
+			{
+				"name": "Fajitas",
+				"price": 17.0,
+				"size": 400,
+				"imageURL": "https://live.staticflickr.com/65535/49982861063_82605c357e_c.jpg"
+			},
+			{
+				"name": "Arrachera",
+				"price": 19.0,
+				"size": 350,
+				"imageURL": "https://live.staticflickr.com/65535/49983384891_939429eb0e_c.jpg"
+			},
+			{
+				"name": "Baby Backs",
+				"price": 15.0,
+				"size": 350,
+				"imageURL": "https://live.staticflickr.com/65535/49983645032_dfd116f399_c.jpg"
+			},
+			{
+				"name": "T-bone",
+				"price": 22.0,
+				"size": 500,
+				"imageURL": "https://live.staticflickr.com/65535/49983643997_ea030ea9bc_c.jpg"
+			},
+			{
+				"name": "Hot Parrillada",
+				"price": 16.0,
+				"size": 700,
+				"imageURL": "https://live.staticflickr.com/65535/49983383906_a301b90480_c.jpg"
+			}
+		]
+	}
+]

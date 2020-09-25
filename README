@@ -1,0 +1,93 @@
+user:danielmq (Marin, Daniel)
+
+Final Project: QuickFood
+
+Description: This app lets the user browse through the food catalog of several restaurants as well
+             as place an order for food items from a given restaurant.
+
+How to run: In the same directory as where the QuickFood.xcodeproj file is, there is a QuickFood.xcworkspace
+            file. When opening the project you should do so by opening this last file, otherwise the external
+            libraries won't be loaded correctly.
+
+            Before opening the project, make sure to type "pod install" in the same directory as the .xcworkspace
+            file. Doing so will install the SDWebImageSwiftUI library. Also make sure you are connected to the
+            internet because all of the images are fetched from a web server.
+
+Demo video: https://youtu.be/7aYsOE60TvM
+
+Summary of each API:
+
+ - @ObservedObject: Used by views like MarketPlaceView and UserSettingsView to reload when changes to
+                    classes (like RestaurantsVM, and UserSettingsVM) happen.
+
+ - @EnvironmentObject: Used by MenuView and MarketPlaceView to access the properties of classes like
+                       Order() and Orientation Model(), as well as give access to all their children views
+                       that declare an environment object of the aproppiate type.
+
+ - @State: Used basically by all major views to control their state
+
+ - @Binding: Used in the MenuView.swift file to bind the values of the sliderValue and popoverIsShowing @State properties
+             between children and parent views.
+
+ - @Published: Used along with various classes like Order(), OrientationInfo(), RestaurantsVM() and UserSettingsVM()
+               to notify changes to Views.
+
+ - Publisher: Used by the UserSettingsVM class to notify subscribers that a change to its @Published userSettings variable
+              has been modified. The subscriber then encodes such variable in JSON format and stores the information
+              in UserDefaults
+
+ - Numerous Controls: Buttons are used practically in all views. A Stepper is used in UserSettingsView to indicate age.
+                      A Slider is used in ModalFoodView to let the user choose the amount of items of a given
+                      food item.
+
+ - TextField: Used in MenuView to let the user enter a message to the chef and in UserSettingsView to let the user
+              enter his/her information.
+
+ - Image: Used directly in Buttons by rendering systemImages and indirectly using the WebImage view from the
+          SDWebImageSwiftUI library to load the food images from an external URL asynchronously and to cache them.
+
+ - GeometryReader: Used by MenuView, MarketPlaceView and ImagePhotoView to size their children views appropiately.
+
+ - Navigation View: Used by MarketPlaceView and UserSettingsView both to set the NavigationBarTitle and link to
+                    other Views
+
+ - Form: Used by UserSettingsView to let the user enter his/her info.
+
+ - Gesture: Used DragGesture() and MagnificationGesture() by the ImageViewWithGestures() view within ModalFoodView().
+
+ - Custom ViewModifier: Implemented by the CardifyImage struct that clips the shape of a view to that of a
+                        RoundedRectangle() and adds shadow.
+
+ - Custom Shape: Implemented by the TriangleVortexShape struct.
+
+ - Animatable: Implemented by the TriangleVortexShape struct, uses AnimatablePair<Double, Double> to animate
+               the number of sides of the TriangleVortexShape and its spin.
+
+ - Implicit Animation: Used by MenuView to animade the fade-in/fade-out of the + and - buttons.
+
+ - Explicit Animation: Used by ModalFoodView's ImageViewWithGestures to let the image return to its initial configuration
+                       using a spring transition. Also used by LaunchScreen view to animate the TriangleVortexShape
+                       to increase its number of sides and rotation. Also by MainView to provide an easeInOut
+                       fade transition between the LaunchScreen view and the MarketPlaceView.
+                       
+ - Modal Sheet and Alert: Used the former within ListRowView to let the user choose more freely the amount of items to
+                          order of a given kind and let him/her inspect the image more closely. Used the latter in MenuView
+                          to alert the user that his/her order was successfully received by the remote server.
+
+ - UserDefaults: Used to store the user settings, implemented by the UserSettingsVM class
+
+ - UI looks good in all sizes/orientations: It simply does :)
+
+ Choice APIs:
+
+ - Sound Effects: Implemented by the playSound() function in SoundPlayer.swift and used to make a small sound when the
+                  LaunchScreen is visible.
+
+ - TabView: Used by MainView to assign both MarketPlaceView and UserSettingsView to different tabs.
+
+
+
+
+
+
+
